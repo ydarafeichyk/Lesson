@@ -1,0 +1,22 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "description": "\"IT-ACADEMY\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ydarafeichyk/Lesson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ydarafeichyk/Lesson/issues"
+  },
+  "homepage": "https://github.com/ydarafeichyk/Lesson#readme",
+  "dependencies": {
+    "fs-extra": "^10.1.0"
+  }
+}
