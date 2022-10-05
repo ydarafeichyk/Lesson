@@ -62,23 +62,19 @@ for (let i = 0; i < p; i ++) {
 let addArr = [];
 for (let i = 1; i < p; i ++) {
     addArr[i] = Math.floor(Math.random()*(frag - minNum));
-    if (i%2 === 1) {
-        fragArr[i] -= addArr[i];
-    }
-    else {
-        fragArr[i] += addArr[i];
-    }
-}
+    fragArr[i] -= addArr[i];
+   }
 fragArr[0] = 0;
-function getSum (num1, num2) {
-    return num1 + num2
-};
+function getSum(num1, num2) {
+    return num1 + num2;
+}
 let Total = fragArr.reduce(getSum);
 fragArr [0] = n - Total;
 console.log("Рандомные числа: " + fragArr);
 
 //3. Task #3 b - Split the number into fractional random numbers
-let digit1 = 40;
+// First option
+let digit1 = 20;
 let iterations1 = 3;
 let arr1 = [];
 let rem1 = digit1;
@@ -92,3 +88,26 @@ for (let i = 1; i <= iterations1; i++) {
     rem1 -= arr2;
 }
 console.log(arr1);
+
+// Second option
+let n1 = 30;
+let p1 = 4;
+let minNum1 = 0;
+let frag1 = n1/p1;
+let fragArr1 = [];
+for (let i = 0; i < p1; i ++) {
+    fragArr1[i] = frag1;
+}
+let addArr1 = [];
+for (let i = 1; i < p1; i ++) {
+    addArr1[i] = (Math.random()*(frag1 - minNum1)).toFixed(2);
+    fragArr1[i] -= addArr1[i];
+}
+fragArr1[0] = 0;
+function getSum1(num3, num4) {
+    return num3 + num4;
+}
+let Total1 = fragArr1.reduce(getSum1);
+fragArr1 [0] = n1 - Total1;
+console.log("Рандомные числа: " + fragArr1);
+
