@@ -2,6 +2,9 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    mocha: true,
+    node: true,
+    commonjs: true,
   },
   extends: 'airbnb-base',
   overrides: [],
@@ -9,6 +12,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+
   rules: {
     'no-restricted-syntax': 0,
     'no-await-in-loop': 'off',

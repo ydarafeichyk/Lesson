@@ -5,3 +5,5 @@
 /allure-results/
 /browserLogs/
 /scripts/
+/mochawesome-report/
+/assert/
