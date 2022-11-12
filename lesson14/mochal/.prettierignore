@@ -1,0 +1,8 @@
+/reports/
+/node_modules/
+/built/
+/allure-report/
+/allure-results/
+/browserLogs/
+/mochawesome-report/
+/assert/
