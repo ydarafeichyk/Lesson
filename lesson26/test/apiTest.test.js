@@ -8,7 +8,7 @@ const spottApiDocumentation1 = require('../testData/SpottApiDocumentation1.v1.js
 
 
 describe('Api testing Yummly API Documentation', function () {
-    test('Check status code feeds/auto-complete', async () => {
+    test('Check status code Api Auto-complete', async () => {
         const response = await axios.get('https://yummly2.p.rapidapi.com/feeds/auto-complete', {
             params: {q: 'chicken soup'},
             headers: {
@@ -19,7 +19,7 @@ describe('Api testing Yummly API Documentation', function () {
         expect(response.status).toEqual(200);
     });
 
-    test('Check response body feeds/auto-complete', async () => {
+    test('Check response body Api Auto-complete', async () => {
         const response = await axios.get('https://yummly2.p.rapidapi.com/feeds/auto-complete', {
             params: {q: 'chicken soup'},
             headers: {
@@ -34,7 +34,7 @@ describe('Api testing Yummly API Documentation', function () {
     })
 
 describe('Api testing Spott API Documentation', function () {
-      test('Check status code', async () => {
+      test('Check status code Api Autocomplete places', async () => {
           const response = await axios.get('https://spott.p.rapidapi.com/places/autocomplete', {
             params: {limit: '10', skip: '0', country: 'US,CA', q: 'Sea', type: 'CITY'},
             headers: {
@@ -45,7 +45,7 @@ describe('Api testing Spott API Documentation', function () {
           expect(response.status).toEqual(200);
     });
   
-      test('Check response body', async () => {
+      test('Check response body Api Autocomplete places', async () => {
           const response = await axios.get('https://spott.p.rapidapi.com/places/autocomplete', {
             params: {limit: '10', skip: '0', country: 'US,CA', q: 'Sea', type: 'CITY'},
             headers: {
@@ -57,7 +57,7 @@ describe('Api testing Spott API Documentation', function () {
         expect(result.valid).toEqual(true)
     });
 
-      test('Check status code Search places', async () => {
+      test('Check status code Api Search places', async () => {
           const response = await axios.get('https://spott.p.rapidapi.com/places', {
             params: {type: 'CITY', skip: '0', country: 'US,CA', limit: '10', q: 'New York'},
             headers: {
@@ -68,7 +68,7 @@ describe('Api testing Spott API Documentation', function () {
       expect(response.status).toEqual(200);
     });
 
-      test('Check response body Search places', async () => {
+      test('Check response body Api Search places', async () => {
           const response = await axios.get('https://spott.p.rapidapi.com/places', {
             params: {type: 'CITY', skip: '0', country: 'US,CA', limit: '10', q: 'New York'},
             headers: {
@@ -79,7 +79,6 @@ describe('Api testing Spott API Documentation', function () {
     const result = await validator.validate(response.data, spottApiDocumentation1)
       expect(result.valid).toEqual(true)
     });
-
   
 })
     
