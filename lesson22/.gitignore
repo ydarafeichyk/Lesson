@@ -1,0 +1,5 @@
+.tmp
+allure-results
+node_modules
+package-lock.json
+
