@@ -1,0 +1,14 @@
+{
+    "type": "object",
+    "properties": {
+      "ingredients": {
+        "type": "array"
+      },
+      "searches": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
