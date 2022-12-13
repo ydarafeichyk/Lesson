@@ -1,0 +1,98 @@
+{
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "utc-millisec"
+        },
+        "geonameId": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "population": {
+          "type": "integer"
+        },
+        "elevation": {
+          "type": "integer"
+        },
+        "timezoneId": {
+          "type": "string"
+        },
+        "geonamesUpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "country": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "geonameId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "adminDivision1": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "geonameId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "adminDivision2": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "geonameId": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        },
+        "score": {
+          "type": "number"
+        },
+        "coordinates": {
+          "type": "object",
+          "properties": {
+            "latitude": {
+              "type": "number"
+            },
+            "longitude": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    }
+  }
