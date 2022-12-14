@@ -3,7 +3,7 @@ const { BasePage } = require('./BasePage');
 class ForgotPasswordPage extends BasePage {
   constructor() {
     super();
-    this.passwordMessage = () => cy.get('//h1');
+    this.passwordMessage = () => cy.get('h1');
   }
 }
 

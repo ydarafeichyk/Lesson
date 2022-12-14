@@ -3,7 +3,7 @@ const { BasePage } = require('./BasePage');
 class SearchResultPage extends BasePage {
   constructor() {
     super();
-    this.title_Search = () => cy.get('//h3');
+    this.title_Search = () => cy.get('h3');
   }
 }
 
