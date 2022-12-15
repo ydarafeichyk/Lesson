@@ -2,7 +2,7 @@ const { BasePage } = require('../BasePage');
 
 class ShoppingCartPage extends BasePage {
   get cartMessage() {
-    return "//div[text()='Товар добавлен в корзину ']"
+    return "(//div[@class='heading'])[5]"
   };
   get btnDel() {
     return "(//a[@class='delete'])[1]"

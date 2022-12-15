@@ -3,13 +3,13 @@ const { BasePage } = require('../BasePage');
 class CatalogPage extends BasePage {
   
     get btnVelo() {
-        return "//a[@itemprop='url']"
+        return "(//a[@href='/catalog/velosipedy/'])[3]"
     };
     get mountainVelo() {
-        return "//div[@class='catalog-section-list-item']"
+        return "//a[@href='/catalog/velosipedy/gornye/']//span[1]"
     };
     get linkQuickView() {
-        return "(//div[@class='productColImage'])[1]"
+        return "(//div[@class='productColImage'])[1]" 
     };
     get btnCart() {
         return "(//a[contains(@class,'addCart changeID')])[2]"
